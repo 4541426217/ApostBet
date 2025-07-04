@@ -1,0 +1,40 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #c4002f;
+  padding: 1rem;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+}
+#game-controls {
+  margin: 2rem auto;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+#game-controls select,
+#game-controls input,
+#game-controls button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+#play-btn {
+  background: #e60965;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+#result-area {
+  text-align: center;
+  margin-top: 2rem;
+}
