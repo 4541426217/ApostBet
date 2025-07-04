@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApostBet - Cassino Virtual</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>ApostBet - Cassino Virtual</h1>
+    <p id="balance-display">Saldo: R$ {{ balance }}</p>
+  </header>
+
+  <main>
+    <section id="game-controls">
+      <label for="game-select">Escolha o jogo:</label>
+      <select id="game-select">
+        <option value="slots">Caça-níqueis</option>
+        <option value="roulette">Roleta</option>
+        <option value="blackjack">Blackjack</option>
+        <option value="baccarat">Baccarat</option>
+        <option value="crash">Crash</option>
+        <option value="double">Double</option>
+      </select>
+
+      <label for="bet-input">Aposta (R$):</label>
+      <input type="number" id="bet-input" value="10" min="1" />
+
+      <button id="play-btn">Jogar</button>
+    </section>
+
+    <section id="result-area"></section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
